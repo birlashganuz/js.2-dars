@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 15px ;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 16px 32px;
+    color: #323232;
+    border-radius: 12px;
+}
+
+a:hover {
+    background-color: black;
+    color: #FFF;
+}
+
+a:first-child:hover::after {
+    content: "Foydalanuvchi sahifaga kirib o`z ismi va yoshini kiritadi. Kiritish oynasi orqali unga taqdim etiladi...";
+    width: 400px;
+    height: 47px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    background-color: #323232;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    animation: animate 0.8s 1;
+}
+
+a:nth-child(2):hover::after {
+    content: "Foydalanuvchi o`z yoshini kiritadi va yoshiga mos fikrlar taqdim etiladi.";
+    width: 400px;
+    height: 47px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    background-color: #323232;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    animation: animate 0.8s 1;
+}
+a:last-child:hover::after {
+    content: "Foydalanuvchi tomonidan 3 ta son kiritiladi. Kiritilgan sonlar ichidan qiymati bo`yicha o`rtasidagisi topiladi.";
+    width: 400px;
+    height: 47px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    background-color: #323232;
+    color: #FFF;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    animation: animate 0.8s 1;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
