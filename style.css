@@ -55,8 +55,40 @@ a:nth-child(2):hover::after {
     top: 101%;
     animation: animate 0.8s 1;
 }
-a:last-child:hover::after {
+a:nth-child(3):hover::after {
     content: "Foydalanuvchi tomonidan 3 ta son kiritiladi. Kiritilgan sonlar ichidan qiymati bo`yicha o`rtasidagisi topiladi.";
+    width: 400px;
+    height: 47px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    background-color: #323232;
+    color: #FFF;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    animation: animate 0.8s 1;
+}
+a:nth-child(4):hover::after {
+    content: "Berilgan sonni juft yoki toqligini aniqlash";
+    width: 400px;
+    height: 47px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    background-color: #323232;
+    color: #FFF;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    animation: animate 0.8s 1;
+}
+a:nth-child(5):hover::after {
+    content: "3 ta berilgan sonlardan eng kattasini topish dasturi.";
     width: 400px;
     height: 47px;
     border: 1px solid #FFF;
